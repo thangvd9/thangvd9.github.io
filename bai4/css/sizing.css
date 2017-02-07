@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.img {
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin: 30px;
+    padding: 44px;
+	height: 276px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+#desc {
+    padding: 15px;
+    text-align: center;
+}

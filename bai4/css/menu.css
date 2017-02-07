@@ -1,0 +1,40 @@
+ * {
+	margin: 0;
+	padding: 0;
+}
+
+.swrap {
+	width: 1000px;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	color: #333;
+}
+
+#menu ul {
+	list-style-type: none;
+	background: white;
+	padding: 5px;
+
+}
+
+#menu ul li {
+	color: #411BCA;
+	display: inline-table;
+	height: 40px;
+	line-height: 40px;
+	width: 120px
+}
+#menu ul li a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+}
+
+#menu ul li a:hover {
+	background: #411BCA;
+	color: #333;
+}
