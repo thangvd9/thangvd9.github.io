@@ -1,0 +1,78 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.banner img {
+	width: 1000px;
+	height: 300px;
+}
+.swrap {
+	width: 1000px;
+	margin: auto;
+	height: 250px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+.title {
+
+	background: green;
+	text-align: center;
+	padding: auto;
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+}
+
+h2{
+	color: black;
+}
+img {
+	width: 200px;
+	height: auto;
+}
+
+.img{
+	float: left;
+	position: relative;
+	width: 21%;
+	padding: 60px;
+}
+
+
+.thumb {
+	border: 1px solid #ddd;
+	cursor: pointer;
+	padding: 4px;
+}
+.thumb img {
+	vertical-align: middle;
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+
+.thumb:hover img {
+	opacity: 0.5;
+	transform: translate(0, -5px); 
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,1); 
+}
+
+@keyframes example {
+
+from{padding-left: 80%}
+to {padding-left: 0%}
+
+}
+
+
+em {
+
+	animation: example 3s ease-in-out infinite;
+}
+
+
+
