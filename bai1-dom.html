@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai tap dom</title>
+	<meta charset="utf-8">
+	<script src="bai1.js"></script>
+	<style type="text/css">
+		.swrap {
+			max-width: 1000px;
+			background: #F0E2E2;
+			padding-top: 50px;
+			margin: auto;
+			height: auto;
+		}
+		.canle {
+			float: left;
+			border: 5px solid #F0E2E2;
+			padding: 5px;
+
+		}
+		.canle img{
+			float: left;
+			margin-right:  15px;
+			max-width: 150px;
+
+		}
+		.no-img {
+			border: 5px solid #F0E2E2;
+			padding : 5px;
+		}
+
+		#number {
+			width: 40px;
+		}
+
+		h4 {
+			padding: -20px;
+		}
+		.fix > button:firstchild {
+			position: fixed;
+		}
+		.fix > button:lastchild {
+			position: fixed;
+		}
+
+		.inline {
+			display: inline-table;
+			float: left;
+
+		}
+	</style>
+
+	<script type="text/javascript">
+		var min=10;
+		var max=30;
+
+		function myFunction1() {
+			var p = document.getElementById("demo");  // lấy giá trị từ id"demo"
+			
+			if(p.style.fontSize) {
+				// chuyển chuỗi văn bản sang số rồi thay thế bằng px
+				var s = parseInt(p.style.fontSize.replace("px","")); 
+			} else {
+				var s = 12; // default s = 12
+			}
+
+			if(s!=max) {
+				s += 1;	// nếu k bằng max thì tăng len 1 đơn vị
+			}
+			p.style.fontSize = s+"px"; // số px
+		}		
+
+		function myFunction2() {
+			var p = document.getElementById("demo");
+
+			if(p.style.fontSize) {
+				var s = parseInt(p.style.fontSize.replace("px",""));
+			} else {
+				var s = 12;
+			}
+
+			if(s!=min) {
+				s -= 1;
+			}
+			p.style.fontSize = s+"px";
+		}
+
+		function changeColor() {
+			var x = document.getElementById('demo');
+			x.style.color = "green";
+			var x = document.getElementById('demo1');
+			x.style.color = "yellow";
+			var x = document.getElementById('demo2');
+			x.style.color = "red";
+
+		}
+
+		function changeColorblack() {
+			var x = document.getElementById('demo');
+			x.style.color = "black";
+			var x = document.getElementById('demo1');
+			x.style.color = "black";
+			var x = document.getElementById('demo2');
+			x.style.color = "black";
+
+		}
+
+		function changeBgColor() {
+			document.getElementById("doimau").style.backgroundColor = 'red' ;
+			
+		}
+
+		function copyContent() {
+			var firstcontent = document.getElementById('demo');
+			var secondcontent = document.getElementById('demo1');
+			secondcontent.innerHTML = firstcontent.innerHTML;
+		}
+
+
+	</script>
+
+</head>
+<body id="doimau">
+
+	<form  >
+	<div class="inline">
+		<div>
+			<p><b>Câu 1,2</b></p>
+			<div >
+				<button type="button" onclick="myFunction1()">Tăng </button>
+				<button type="button" onclick="myFunction2()">Giảm</button>
+			</div>
+		</div>
+
+		<div>
+			<p><b>Câu 3</b></p>
+			<div >
+				<button type="button" onclick="changeColor()">Đổi màu </button>
+				<button type="button" onclick="changeColorblack()">Đổi màu gốc</button>
+			</div>
+		</div>
+
+		<div>
+			<p><b>Câu 4</b></p>
+			<div >
+				<button type="button" onclick="changeBgColor()">Đổi màu Bg</button>
+			</div>
+		</div>
+
+		<div>
+			<p><b>Câu 5</b></p>
+			<div >
+				<button type="button" onclick="copyContent()">Copy text</button>
+			</div>
+		</div>
+
+</div>
+	</form>
+
+	<div class="swrap" >
+		<div class="canle">
+
+			<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKcjs90nIcJV6JCPxZK4gW802O0Bbtd1NWYNEEdITmZ6XrviExVw">
+
+			<p id="demo"> 1, kiểm tra ngoại hình:
+				– Cao su có bị mòn nhiều hay ít, ốc vít có dấu thảo mở hay chưa? Vì ngoại hình tương ứng với số shot hoạt động trong máy (không thể máy cũ mà số shot lại quá ít và ngược lại), ngoại trừ một số máy được dùng cố định ở studio chụp trong nhà không đem ra bên ngoài nhiều, yếu tố này bạn nên hỏi kỹ người bán.
+			</p>
+			
+		</div>
+
+		<div class="no-img">
+			<p id="demo1"> 2. Nội thất bên trong máy.
+				– Kiểm tra sensor có nhiều điểm chết hay chưa: Đóng nắp body để iso 100 hoặc 200 (tùy máy, nôm na là để ISO thấp nhất) để tốc độ 30 giây chụp và chờ đợi kết quả bằng cách zoom tấm hình lớn nhất xem có SAO trên nên đen hay không?
+				– Post tấm hình mới chụp lên trang web https://www.camerashuttercount.com và chờ kết quả kiểm tra  xem hình có trùng với seri number máy hay không, kiểm tra bằng cách vạch đít máy lên đọc nhé . Sau đó  xem  số shots đã sử dụng là bao nhiêu! Nếu số seri không trùng  thì không mua nữa nhé vì máy này đã tháo mở và thay thế linh kiện rồi nên seri sẽ không trùng khớp.
+			</p>
+
+		</div>
+
+		<div class="no-img">
+			<p id="demo2">3, Về cơ chế hoạt động.
+				-Gắn lens vào máy ảnh, chụp và để ý kiểm tra xem các phần focus (AF/MF) hoạt động có chuẩn hay không, chủ yếu là kiểm tra AF nhé? Lấy nét xa, gần, trung có chuẩn hay là không?
+				– Cuối cùng là các phần khác như đèn flash cóc, chân đèn Flash Gun và các phím bấm có hoạt động, đàn hồi bình thường hay không và để ý xem chữ cái phai nhiều hay không nhé!
+			</p>
+		</div>
+
+
+
+	</div>
+	
+
+</body>
+</html>
