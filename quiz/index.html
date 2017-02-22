@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>	
+	<div id="swrap">
+
+
+		<form id="container" name="quiz" >
+
+			<div>
+				<h1 id="align">This the best quiz on the internet</h1>
+			</div>
+			
+			<div >
+				<h2 id="size" > Tên của bạn là gì :</h2>
+				<input type=text" name="text"  id="textbox" placeholder="Tên của bạn">
+			</div>
+
+
+			<div id="question-1" >
+				<h2 id="size"> 1.	JavaScript là ngôn ngữ xử lý ở:</h2>
+
+				<input type="radio" name="cau1" id="cau1-1" value="cau1-1" ><span>Client</span><br>
+				<input type="radio" name="cau1" id="cau1-2" value="cau1-2" ><span>Sever</span><br>
+				<input type="radio" name="cau1" id="cau1-3" value="cau1-3" ><span>Không có dạng nào.</span><br>
+				<div id="thongbao"></div>
+			</div>
+
+			<div id="question-2">
+				<h2 id="size"> 2.	Javascript là ngôn ngữ thông dịch hay biên dịch</h2>
+
+				<input type="radio" name="cau2" id="cau2-1" value="cau2-1"><span>Thông dịch</span><br>
+				<input type="radio" name="cau2" id="cau2-2" value="cau2-2"><span>Diễn dịch</span><br>
+				<input type="radio" name="cau2" id="cau2-3" value="cau2-3"><span>Cả hai dạng</span><br>
+				<div id="thongbao1"></div>
+			</div>
+
+			<div id="question-3">
+				<h2 id="size">3.	Phương thức viết chương trình của Javascript như thế nào?</h2>
+
+				<input type="radio" name="cau3" id="cau3-1" value="cau3-1"><span>Viết riêng một trang</span><br>
+				<input type="radio" name="cau3" id="cau3-2" value="cau3-2"><span>Viết chung với HTML</span><br>
+				<input type="radio" name="cau3" id="cau3-3" value="cau3-3"><span>Cả hai dạng</span><br>
+				<div id="thongbao2"></div>
+			</div>
+
+			<div id="question-4">
+				<h2 id="size"> 4.	Javascript là ngôn ngữ kịch bản có dấu được mã nguồn không?</h2>
+
+				<input type="radio" name="cau4" id="cau4-1" value="cau4-1"><span>Không dấu được vì các kịch bản chạy ở client</span><br>
+				<input type="radio" name="cau4" id="cau4-2" value="cau4-2"><span>Dấu được vì chương trình hoạt động độc lập với trình duyệt</span><br>
+				<input type="radio" name="cau4" id="cau4-3" value="cau4-3"><span>Hai phát biểu đều sai.</span><br>
+				<div id="thongbao3"></div>
+			</div>
+
+			<div id="question-5">
+				<h2 id="size"> 5.	JavaScript được bắt đầu bằng? </h2>
+
+				<input type="radio" name="cau5" id="cau5-1" value="cau5-1"><span>&lt;scritp&gt; …&lt;/script&gt;  </span><br>
+				<input type="radio" name="cau5" id="cau5-2" value="cau5-2"><span>&lt;Javascript&gt; …&lt;Javascript&gt; </span><br>
+				<input type="radio" name="cau5" id="cau5-3" value="cau5-3"><span>&lt;java&gt; …&lt;Java&gt;</span><br>
+				<input type="radio" name="cau5" id="cau5-3" value="cau5-3"><span>Tất cả các dạng trên</span><br>
+				<div id="thongbao4"></div>
+			</div>
+
+			<div id="finish">
+				<input type="button" name="finish" id="button" value="I'm finished"  onclick="check();">
+			</div>
+
+		</form>
+
+		<div id="after-finish">
+			<P id="messenger"></P>
+			<p id="number_correct"></p>
+			<img src="" id="picture"> 
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
+
+	</div>
+</body>
+</html>
